@@ -1,0 +1,25 @@
+header {
+    margin: 0 auto;
+    width: 900px;
+    padding: 0 1rem;
+}
+.col-sm-10{
+    padding-bottom: 1.5rem; 
+}
+
+.form-group {
+    margin-top: 50px;
+}
+
+h1{
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+}
+
+p {
+    color: rgb(175, 18, 18);
+    text-align: center;
+}
