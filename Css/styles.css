@@ -4,11 +4,11 @@ header {
     padding: 0 1rem;
 }
 .col-sm-10{
-    padding-bottom: 1.5rem; 
+    padding-bottom: 1rem; 
 }
 
 .form-group {
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 h1{
@@ -22,4 +22,18 @@ h1{
 p {
     color: rgb(175, 18, 18);
     text-align: center;
+}
+
+#needed1, #needed2, #needed3, #needed4, #needed5 {
+    color: red;
+    margin-top: 0;
+    padding: 0;
+    height: 1px;
+}
+
+label {
+    font-weight: 550;
+}
+span {
+    font-weight: normal;
 }

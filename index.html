@@ -24,20 +24,23 @@
             <p>Note: The ones marked with * is required!</p>
         </div>
 
-        <form method="post" action="" >
+        <form method="post" action="" onsubmit="return false">
 
             <div class="form-group row">
     
                 <!-- Username starts from here -->
                 <label for="" class="col-sm-2 col-form-label">Username*</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="" placeholder="Username" required>
+                    <span id="needed1"></span>
+                    <input type="text" class="form-control" id="userName" placeholder="Username">
+                    
                 </div>
 
                 <!-- Email starts from here -->
                 <label for="" class="col-sm-2 col-form-label">Email Address*</label>
                 <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                    <span id="needed2"></span>
                 </div>
 
                 <!-- Phone Number starts from here -->
@@ -49,31 +52,35 @@
                 <!-- Gender starts from here -->
                 <label for="" class="col-sm-2 col-form-label">Gender*</label>
                 <div class="col-sm-10">
-                    <select class="form-control" id="" required>
+                    <select class="form-control" id="gender">
                         <option></option>
                         <option>Male</option>
                         <option>Female</option>
                     </select>
+                    <span id="needed3"></span>
                 </div>
 
                 <!-- Password starts from here -->
-                <label for="" class="col-sm-2 col-form-label">Password*</label>
+                <label for="" class="col-sm-2 col-form-label">Password* <span id="needed4"></span></label>
                 <div class="col-sm-10 input-group">
-                    <input type="password" class="form-control id_password" id="id_password" placeholder="Password" required>
+                    <input type="password" class="form-control id_password" id="password" placeholder="password">
                     <span class="input-group-text">
                         <i class="far fa-eye" id="togglePassword" ></i>
                     </span>
                 </div>
                 
                 <!-- Confirm Password starts from here -->
-                <label for="" class="col-sm-2 col-form-label">Confirm Password*</label>
+                <label for="" class="col-sm-2 col-form-label">Confirm Password* <span id="needed5"></span></label>
                 <div class="col-sm-10 input-group">
-                    <input type="password" class="form-control id_password" id="id_password" placeholder="Confirm Password" required>
+                    <input type="password" class="form-control id_password" id="confirmPassword" placeholder="Confirm Password">
+                    <span class="input-group-text">
+                        <i class="far fa-eye" id="toggleConfirmPassword"></i>
+                    </span>
                 </div>
 
                 <!-- Button starts from here -->
                 <div class="col-sm-10 offset-sm-2">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary" onclick="validator()">Submit</button>
                 </div>
 
             </div>
