@@ -42,7 +42,6 @@ function validator() {
 
   if( userName == "" ) {
     document.getElementById( 'needed1' ).innerHTML = "Please enter your username"
-    return(document.getElementById( 'needed1' ).innerHTML = "")
   }
   else if( email == "" ) {
     document.getElementById( 'needed2' ).innerHTML = "Please enter your email"
