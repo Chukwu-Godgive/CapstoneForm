@@ -65,6 +65,7 @@ function validator() {
     document.getElementById( 'needed5' ).innerHTML = "Password did not match"
   }
   else{
+    alert(`Thank you ${userName}, give me a call 08130709131`)
     location.href = "index.html"
   }
 }
